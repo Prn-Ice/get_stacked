@@ -281,7 +281,7 @@ abstract class MultipleStreamGetController
     extends _MultiDataSourceGetController {
   // Every MultipleStreamViewModel must override streamDataMap
   // StreamData requires a stream, but lifecycle events are optional
-  // if a lifecyle event isn't defined we use the default ones here
+  // if a lifecycle event isn't defined we use the default ones here
   // ignore: public_member_api_docs
   Map<String, StreamData> get streamsMap;
 
@@ -313,7 +313,7 @@ abstract class MultipleStreamGetController
           _errorMap.remove(key);
           _errors.remove(key);
           update();
-          // Extra security in case transformData isnt sent
+          // Extra security in case transformData isn't sent
           var interceptedData = streamsMap[key].transformData == null
               ? transformData(key, incomingData)
               : streamsMap[key].transformData(incomingData);
@@ -428,7 +428,7 @@ abstract class StreamGetController<T> extends _SingleDataSourceGetController<T>
         _hasError = false;
         _error = null;
         update();
-        // Extra security in case transformData isnt sent
+        // Extra security in case transformData isn't sent
         var interceptedData =
             transformData == null ? incomingData : transformData(incomingData);
 
@@ -531,7 +531,7 @@ class StreamData<T> extends _SingleDataSourceGetController<T> {
         _hasError = false;
         _error = null;
         update();
-        // Extra security in case transformData isnt sent
+        // Extra security in case transformData isn't sent
         var interceptedData =
             transformData == null ? incomingData : transformData(incomingData);
 
