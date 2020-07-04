@@ -1,6 +1,6 @@
 name: get_stacked
 description: An implementation of the Stacked package using Get.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/Prn-Ice/get_stacked
 
 environment:

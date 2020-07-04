@@ -145,6 +145,6 @@ class WidgetOne extends StatelessWidget {
 }
 ```
 
-Check out the example for more realistic scenarios.
+Check out the example folder for a complete example.
 
 All suggestions, issues, pull requests would be appreciated.
