@@ -1,6 +1,6 @@
 name: get_stacked
-description: An implementation of the Stacked package using Get.
-version: 1.0.1
+description: An implementation of the Stacked package using Get. It gives you all the amazing utility classes from the Stacked package but without the dependency on provider.
+version: 1.0.2
 homepage: https://github.com/Prn-Ice/get_stacked
 
 environment:

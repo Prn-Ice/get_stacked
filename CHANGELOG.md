@@ -1,4 +1,8 @@
-## [1.0.1] 
+## [1.0.2] 
+
+- Better description.
+
+## [1.0.1]
 
 - Doc changes
 
