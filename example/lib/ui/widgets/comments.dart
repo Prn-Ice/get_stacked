@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_only_example/core/models/comment.dart';
-import 'package:get_only_example/core/viewmodels/comments_model.dart';
-import 'package:get_only_example/ui/shared/app_colors.dart';
-import 'package:get_only_example/ui/shared/ui_helpers.dart';
+
+import '../../core/models/comment.dart';
+import '../../core/viewmodels/comments_model.dart';
+import '../shared/app_colors.dart';
+import '../shared/ui_helpers.dart';
 
 class Comments extends StatelessWidget {
   @override

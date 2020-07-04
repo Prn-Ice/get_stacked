@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
-import 'package:get_only_example/core/services/authentication_service.dart';
 import 'package:get_stacked/get_stacked.dart';
+
+import '../services/authentication_service.dart';
 
 class LoginModel extends BaseGetController {
   final AuthenticationService _authenticationService =

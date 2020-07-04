@@ -13,7 +13,7 @@ dependencies:
   cupertino_icons: ^0.1.3
   http: ^0.12.1
   get_stacked:
-    path: ../../
+    path: ../
 
 dev_dependencies:
   flutter_test:

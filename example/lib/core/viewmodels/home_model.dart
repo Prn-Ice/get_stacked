@@ -1,9 +1,10 @@
 import 'package:get/get.dart';
-import 'package:get_only_example/core/models/post.dart';
-import 'package:get_only_example/core/models/user.dart';
-import 'package:get_only_example/core/services/authentication_service.dart';
-import 'package:get_only_example/core/services/posts_service.dart';
 import 'package:get_stacked/get_stacked.dart';
+
+import '../models/post.dart';
+import '../models/user.dart';
+import '../services/authentication_service.dart';
+import '../services/posts_service.dart';
 
 class HomeModel extends FutureGetController {
   PostsService _postsService = Get.find<PostsService>();

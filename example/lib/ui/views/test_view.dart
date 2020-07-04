@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_only_example/core/viewmodels/test_view_model.dart';
+
+import '../../core/viewmodels/test_view_model.dart';
 
 class TestView extends StatelessWidget {
   @override

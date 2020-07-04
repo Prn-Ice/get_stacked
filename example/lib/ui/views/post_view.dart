@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_only_example/core/viewmodels/post_model.dart';
-import 'package:get_only_example/ui/shared/app_colors.dart';
-import 'package:get_only_example/ui/shared/text_styles.dart';
-import 'package:get_only_example/ui/shared/ui_helpers.dart';
-import 'package:get_only_example/ui/widgets/comments.dart';
-import 'package:get_only_example/ui/widgets/like_button.dart';
+
+import '../../core/viewmodels/post_model.dart';
+import '../shared/app_colors.dart';
+import '../shared/text_styles.dart';
+import '../shared/ui_helpers.dart';
+import '../widgets/comments.dart';
+import '../widgets/like_button.dart';
 
 class PostView extends StatelessWidget {
   @override

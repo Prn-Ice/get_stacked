@@ -1,6 +1,7 @@
 import 'package:get/get.dart';
-import 'package:get_only_example/core/services/posts_service.dart';
 import 'package:get_stacked/get_stacked.dart';
+
+import '../services/posts_service.dart';
 
 class LikeButtonModel extends BaseGetController {
   PostsService _postsService = Get.find<PostsService>();

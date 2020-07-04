@@ -1,9 +1,10 @@
 import 'dart:convert';
 
-import 'package:get_only_example/core/models/comment.dart';
-import 'package:get_only_example/core/models/post.dart';
-import 'package:get_only_example/core/models/user.dart';
 import 'package:http/http.dart' as http;
+
+import '../models/comment.dart';
+import '../models/post.dart';
+import '../models/user.dart';
 
 /// The service responsible for networking requests
 class Api {

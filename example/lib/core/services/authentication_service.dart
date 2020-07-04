@@ -1,8 +1,8 @@
 import 'dart:async';
 
 import 'package:get/get.dart';
-import 'package:get_only_example/core/models/user.dart';
 
+import '../models/user.dart';
 import 'api.dart';
 
 class AuthenticationService {

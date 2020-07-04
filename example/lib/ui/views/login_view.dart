@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_only_example/core/viewmodels/login_model.dart';
-import 'package:get_only_example/ui/router.dart';
-import 'package:get_only_example/ui/shared/app_colors.dart';
-import 'package:get_only_example/ui/widgets/login_header.dart';
+
+import '../../core/viewmodels/login_model.dart';
+import '../router.dart';
+import '../shared/app_colors.dart';
+import '../widgets/login_header.dart';
 
 class LoginView extends StatefulWidget {
   @override

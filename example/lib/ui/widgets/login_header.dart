@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:get_only_example/ui/shared/text_styles.dart';
-import 'package:get_only_example/ui/shared/ui_helpers.dart';
+
+import '../shared/text_styles.dart';
+import '../shared/ui_helpers.dart';
 
 class LoginHeader extends StatelessWidget {
   final TextEditingController controller;

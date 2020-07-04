@@ -1,7 +1,8 @@
 import 'package:get/get.dart';
-import 'package:get_only_example/core/viewmodels/comments_model.dart';
-import 'package:get_only_example/core/viewmodels/like_button_model.dart';
-import 'package:get_only_example/core/viewmodels/post_model.dart';
+
+import '../viewmodels/comments_model.dart';
+import '../viewmodels/like_button_model.dart';
+import '../viewmodels/post_model.dart';
 
 class PostBindings extends Bindings {
   @override

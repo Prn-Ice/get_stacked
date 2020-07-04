@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_only_example/core/models/post.dart';
-import 'package:get_only_example/core/viewmodels/home_model.dart';
-import 'package:get_only_example/ui/router.dart';
-import 'package:get_only_example/ui/shared/app_colors.dart';
-import 'package:get_only_example/ui/shared/text_styles.dart';
-import 'package:get_only_example/ui/shared/ui_helpers.dart';
-import 'package:get_only_example/ui/widgets/postlist_item.dart';
+
+import '../../core/models/post.dart';
+import '../../core/viewmodels/home_model.dart';
+import '../router.dart';
+import '../shared/app_colors.dart';
+import '../shared/text_styles.dart';
+import '../shared/ui_helpers.dart';
+import '../widgets/postlist_item.dart';
 
 class HomeView extends StatelessWidget {
   @override

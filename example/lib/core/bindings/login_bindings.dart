@@ -1,7 +1,8 @@
 import 'package:get/get.dart';
-import 'package:get_only_example/core/services/api.dart';
-import 'package:get_only_example/core/services/authentication_service.dart';
-import 'package:get_only_example/core/viewmodels/login_model.dart';
+
+import '../services/api.dart';
+import '../services/authentication_service.dart';
+import '../viewmodels/login_model.dart';
 
 class LoginBindings extends Bindings {
   @override

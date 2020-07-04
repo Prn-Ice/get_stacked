@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_only_example/core/bindings/home_bindings.dart';
-import 'package:get_only_example/core/bindings/login_bindings.dart';
-import 'package:get_only_example/core/bindings/post_bindings.dart';
-import 'package:get_only_example/ui/views/home_view.dart';
-import 'package:get_only_example/ui/views/login_view.dart';
-import 'package:get_only_example/ui/views/post_view.dart';
 
+import '../core/bindings/home_bindings.dart';
+import '../core/bindings/login_bindings.dart';
+import '../core/bindings/post_bindings.dart';
+import 'views/home_view.dart';
+import 'views/login_view.dart';
+import 'views/post_view.dart';
 import 'views/test_view.dart';
 
 class Router {
