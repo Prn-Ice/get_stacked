@@ -13,6 +13,7 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<HomeModel>(
+      init: HomeModel(),
       builder: (model) => Scaffold(
         backgroundColor: backgroundColor,
         body: model.isBusy

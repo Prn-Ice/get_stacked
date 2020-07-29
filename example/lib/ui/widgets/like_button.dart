@@ -13,6 +13,7 @@ class LikeButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<LikeButtonModel>(
+      init: LikeButtonModel(),
       builder: (model) => Row(
         children: <Widget>[
           Text('Likes ${model.postLikes(postId)} '),

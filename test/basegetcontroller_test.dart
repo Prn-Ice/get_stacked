@@ -2,10 +2,23 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:get_stacked/get_stacked.dart';
 
 class TestGetController extends BaseGetController {
+  bool onErrorCalled = false;
   Future runFuture(
       {String busyKey, bool fail = false, bool throwException = false}) {
-    return runBusyFuture(_futureToRun(fail),
-        busyObject: busyKey, throwException: throwException);
+    return runBusyFuture(
+      _futureToRun(fail),
+      busyObject: busyKey,
+      throwException: throwException,
+    );
+  }
+
+  Future runTestErrorFuture(
+      {String key, bool fail = false, bool throwException = false}) {
+    return runErrorFuture(
+      _futureToRun(fail),
+      key: key,
+      throwException: throwException,
+    );
   }
 
   Future _futureToRun(bool fail) async {
@@ -14,11 +27,16 @@ class TestGetController extends BaseGetController {
       throw Exception('Broken Future');
     }
   }
+
+  @override
+  void onFutureError(error, key) {
+    onErrorCalled = true;
+  }
 }
 
 void main() {
-  group('BaseGetController Tests', () {
-    group('Busy functionality', () {
+  group('BaseGetController Tests -', () {
+    group('Busy functionality -', () {
       test('When setBusy is called with true isBusy should be true', () {
         var controller = TestGetController();
         controller.setBusy(true);
@@ -108,6 +126,21 @@ void main() {
         controller.onClose();
         controller.update();
         expect(() => controller.update(), returnsNormally);
+      });
+    });
+
+    group('runErrorFuture -', () {
+      test('When called and error is thrown should set error', () async {
+        var controller = TestGetController();
+        await controller.runTestErrorFuture(fail: true);
+        expect(controller.hasError, true);
+      });
+      test(
+          'When called and error is thrown should call onErrorForFuture override',
+          () async {
+        var controller = TestGetController();
+        await controller.runTestErrorFuture(fail: true, throwException: false);
+        expect(controller.onErrorCalled, true);
       });
     });
   });

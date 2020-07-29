@@ -17,6 +17,7 @@ class _LoginViewState extends State<LoginView> {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<LoginModel>(
+      init: LoginModel(),
       builder: (model) => Scaffold(
         backgroundColor: backgroundColor,
         body: Column(

@@ -12,6 +12,7 @@ class PostView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetBuilder<PostModel>(
+      init: PostModel(),
       builder: (model) => Scaffold(
         backgroundColor: backgroundColor,
         body: Padding(

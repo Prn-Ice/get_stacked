@@ -1,13 +1,13 @@
 name: get_stacked
 description: An implementation of the Stacked package using Get. It gives you all the amazing utility classes from the Stacked package but without the dependency on provider.
-version: 1.0.3
+version: 1.0.4
 homepage: https://github.com/Prn-Ice/get_stacked
 
 environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  get: ^3.2.2
+  get: ^3.4.1
 
   flutter:
     sdk: flutter

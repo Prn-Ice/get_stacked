@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get_only_example/ui/shared/ui_helpers.dart';
 
 import '../../core/viewmodels/test_view_model.dart';
 
@@ -12,10 +13,17 @@ class TestView extends StatelessWidget {
         appBar: AppBar(
           title: Text('This is a test'),
         ),
-        body: Container(
-          child: Center(
-            child: _.isBusy ? CircularProgressIndicator() : Text('${_.data}'),
-          ),
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            _.fetchingInt
+                ? Center(child: CircularProgressIndicator())
+                : Text('Int Val: ${_.fetchedNumber}'),
+            UIHelper.verticalSpaceLarge(),
+            _.fetchingString
+                ? Center(child: CircularProgressIndicator())
+                : Text('String val: ${_.fetchedString}'),
+          ],
         ),
       ),
     );
