@@ -1,3 +1,7 @@
+## [1.0.6] 
+
+- Add a license.
+
 ## [1.0.5] 
 
 - Bump Get version.
