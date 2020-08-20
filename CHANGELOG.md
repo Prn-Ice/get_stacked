@@ -1,3 +1,7 @@
+## [1.0.5] 
+
+- Bump Get version.
+
 ## [1.0.4] 
 
 - Add IndexTrackingGetController and move to get 3.4.1.
