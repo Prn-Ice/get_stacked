@@ -152,6 +152,8 @@ class BaseGetController extends GetxController {
   void update([List<String> ids, bool condition = true]) {
     if (!disposed) {
       super.update();
+    } else {
+      super.update(ids, disposed);
     }
   }
 

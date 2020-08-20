@@ -1,30 +1,25 @@
-import 'dart:math';
+import 'package:get/get.dart';
 
-import 'package:get_stacked/get_stacked.dart';
+class TestViewModel extends GetxController {
+  static TestViewModel get to => Get.find();
 
-class TestViewModel extends MultipleFutureGetController {
-  static const String _stringKey = 'strings';
-  static const String _intKey = 'ints';
+  String text = 'if this shows, onInit did not run';
+  bool _loading = false;
 
-  bool get fetchingString => busy(_stringKey);
-  bool get fetchingInt => busy(_intKey);
+  bool get loading => _loading;
 
-  int get fetchedNumber => dataMap[_intKey];
-  String get fetchedString => dataMap[_stringKey];
-
-  @override
-  Map<String, Future Function()> get futuresMap => {
-        _stringKey: _fetchString,
-        _intKey: _fetchInt,
-      };
-
-  Future<int> _fetchInt() async {
-    await Future.delayed(Duration(seconds: 2));
-    return Random().nextInt(10);
+  set loading(bool value) {
+    _loading = value;
+    update();
   }
 
-  Future<String> _fetchString() async {
-    await Future.delayed(Duration(seconds: 4));
-    return 'Done';
+  @override
+  Future<void> onInit() async {
+    print('passing on onInit');
+    super.onInit();
+    loading = true;
+    await Future.delayed(Duration(seconds: 1));
+    text = 'hello';
+    loading = false;
   }
 }
