@@ -12,7 +12,7 @@ dependencies:
 
   cupertino_icons: ^0.1.3
   http: ^0.12.2
-  get: ^3.4.6
+  get: ^3.8.0
   get_stacked:
     path: ../
 

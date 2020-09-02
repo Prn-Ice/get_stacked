@@ -1,3 +1,7 @@
+## [1.0.7] 
+
+- Bump Get version and fix 'BaseGetController.onClose' ('void Function()') isn't a valid override of 'GetxController.onClose'.
+
 ## [1.0.6] 
 
 - Add a license.

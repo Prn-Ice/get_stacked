@@ -191,7 +191,7 @@ class BaseGetController extends GetxController {
   }
 
   @override
-  void onClose() {
+  onClose() {
     _disposed = true;
     super.onClose();
   }
@@ -412,7 +412,7 @@ abstract class MultipleStreamGetController extends _MultiDataSourceGetController
 
   @override
   @mustCallSuper
-  void onClose() {
+  onClose() {
     _disposeAllSubscriptions();
     super.onClose();
   }
@@ -500,7 +500,7 @@ abstract class StreamGetController<T> extends _SingleDataSourceGetController<T>
   }
 
   @override
-  void onClose() {
+  onClose() {
     _streamSubscription.cancel();
     onCancel();
 
@@ -572,7 +572,7 @@ class StreamData<T> extends _SingleDataSourceGetController<T> {
   }
 
   @override
-  void onClose() {
+  onClose() {
     _streamSubscription.cancel();
     onCancel();
 

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get_only_example/ui/views/test_view.dart';
 
 import 'ui/router.dart';
 
